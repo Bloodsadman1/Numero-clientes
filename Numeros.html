@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Ejemplo</title>
+    <script>
+        function obtenerRespuesta() {
+            // Obtener el valor ingresado por el usuario
+            var informacion = document.getElementById("informacion").value;
+
+            // Realizar algún procesamiento o cálculo con la información ingresada
+            var respuesta = "¡Hola, " + informacion + "Procesando informacion.";
+
+            // Mostrar la respuesta en el elemento con el id "resultado"
+            document.getElementById("resultado").innerHTML = respuesta;
+        }
+    </script>
+</head>
+<body>
+    <h1>NUMEROS CLIENTES</h1>
+
+    <label for="informacion">Ingresa tu información:</label>
+    <input type="text" id="informacion" name="informacion">
+
+    <button onclick="obtenerRespuesta()">Enviar</button>
+
+    <p id="resultado"></p>
+</body>
+</html>
